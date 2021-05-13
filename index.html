@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercices</title>
+    <link rel="stylesheet" href="canvas.css">
+    <script src="utilities.js" defer></script>
+    <script src="canvas.js" defer></script>
+</head>
+<body>
+    <h1>Exercices</h1>
+    
+    <main class="container">
+        <section id="choice-color">
+            <h2>Choix de la couleur</h2>
+            <ul>
+                <li>
+                    <div class="color color-red" data-color="red"></div>
+                </li>
+                <li>
+                    <div class="color color-blue" data-color="blue"></div>
+                </li>
+                <li>
+                    <div class="color color-green" data-color="green"></div>
+                </li>
+                <li>
+                    <div class="color color-black" data-color="black"></div>
+                </li>
+                <li>
+                    <div class="color color-pink" data-color="pink"></div>
+                </li>
+                <li>
+                    <div class="color color-purple" data-color="purple"></div>
+                </li>
+                <li>
+                    <div class="color color-orange" data-color="orange"></div>
+                </li>
+                <li>
+                    <div class="color color-custom" data-color="#00ff00"></div>
+                </li>
+            </ul>
+        </section>
+        
+        <hr>
+        
+        <section id="choice-shape">
+            <h2>Choix de la forme</h2>
+            <ul>
+                <li><button class="shape" data-shape="rectangle">Rectangle</button></li>
+                <li><button class="shape" data-shape="circle">Cercle</button></li>
+                <li><button class="shape" data-shape="line">Trait</button></li>
+            </ul>
+        </section>
+        
+        <hr>
+        
+        <form>
+            <fieldset>
+                <legend>Configuration</legend>
+                <ul>
+                    <li>
+                        <label for="color">Choix de la couleur</label>
+                        <select id="color">
+                            <option value="red">Rouge</option>
+                            <option value="green">Vert</option>
+                            <option value="blue">Bleu</option>
+                            <option value="black">Noir</option>
+                            <option value="pink">Rose</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="radius">Choix du rayon</label>
+                        <input type="number" id="radius" min="10" max="50" value="10">
+                    </li>
+                    <li>
+                        <label for="shape">Choix de la forme</label>
+                        <select id="shape">
+                            <option value="rectangle">Rectangle</option>
+                            <option value="circle">Cercle</option>
+                        </select>
+                    </li>
+                    <li>
+                        <button type="button" id="clear-canvas">Effacer le dessin</button>
+                    </li>
+                </ul>
+            </fieldset>
+        </form>
+        
+        <canvas id="canvas" width="800" height="600"></canvas>
+    </main>
+</body>
+</html>

@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#canvas {
+    border: 1px solid black;
+}
+
+form {
+    margin-bottom: 1em;
+}
+
+form label {
+    width: 150px;
+    display: inline-block;
+}
+
+form ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+form ul li {
+    margin: 0.5em;
+}
+
+#choice-color ul, #choice-shape ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+
+.color {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 0 0.5em;
+}
+
+.color-red {
+    background-color: red;
+}
+
+.color-green {
+    background-color: green;
+}
+
+.color-blue {
+    background-color: blue;
+}
+
+.color-black {
+    background-color: black;
+}
+
+.color-pink {
+    background-color: pink;
+}
+
+.color-orange {
+    background-color: orange;
+}
+
+.color-purple {
+    background-color: purple;
+}
+
+.color-custom {
+    background-color: grey;
+}
